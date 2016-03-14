@@ -28,6 +28,12 @@
 #include "ofMain.h"
 
 class ofxGazebo{
+public:
+	void setup();
+	void exit();
+	void draw();
+	gazebo::physics::WorldPtr loadWorld(string path);
+	
 	
 protected:
 	gazebo gazebo;
